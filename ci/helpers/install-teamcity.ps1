@@ -3,8 +3,8 @@ docker network create myteamcity-network
 
 # install TeamCity server
 docker run --name myteamcity `
-    -v d:/teamcity/data:/data/teamcity_server/datadir `
-    -v d:/teamcity/logs:/opt/teamcity/logs `
+    -v c:/teamcity/data:/data/teamcity_server/datadir `
+    -v c:/teamcity/logs:/opt/teamcity/logs `
     -p 8111:8111 `
     --restart always `
 	-d `
